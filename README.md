@@ -1,5 +1,62 @@
 # restful-booker-tests
-Restful-booker tests in Postman and RestAssured
+Postman and Rest Assured API tests for Restful-Booker.
+
+Restful-Booker quick links:
+- [Restful-Booker](https://restful-booker.herokuapp.com/)
+- [Restful-Booker API Docs](https://restful-booker.herokuapp.com/apidoc/index.html)
+
+Restful-Booker is a Web API playground created by Mark Winteringham that forms a Bed and Breakfast booking service. It offers authentication and CRUD operations. This Web API was implemented with some bugs present as well. The bugs I have found are listed in the [Issues section](Issues)
+
+## Postman
+Postman environment and collection prepared for Restful-Booker API tests. Both can be found in the [postman folder](https://github.com/mkornaszewska/restful-booker-tests/tree/main/postman).
+
+## Rest Assured
+![](https://img.shields.io/badge/Code-Java-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Framework-Junit%205-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Build%20tool-Maven-informational?style=flat&&color=1E96FC)
+
+![](https://img.shields.io/badge/Library-REST%20Assured-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Library-Lombok-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Library-JSON%20Schema%20Validator-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Library-JavaFaker-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Library-SLF4J-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Library-Allure-informational?style=flat&&color=1E96FC)
+
+
+### Project structure
+
+```
+src
+  + main
+    + java
+        + com
+            + mkornaszewska
+                + config                Configuration reader for the properties file
+                + dto                   DTOs for createBooking and partialUpdatebooking
+                + helpers               Helpers to create fake data for requests
+    + resources                         Properties for RestfulBooker (baseURL, credentials, etc.)
+  + test
+    + java
+        + com
+            + mkornaszewska
+                + requests               Classes for BaseRequest, booking and token requests
+                + schemas                JSON schemas for requests
+                + tests                  Tests for Restful-Booker endpoints
+                + reports                Sample allure report
+```
+
+### Installation and test execution
+#### Prerequisites
+- Java 19
+#### Installation
+1. Clone this git repository
+2. Open it with an IDE of your choice (IntelliJ, Eclipse)
+#### Test Execution
+Either "run test" option in the IDE of your choice or execute the following command in the terminal:
+```
+$ mvn clean test
+```
+#### Allure reports
+To generate an Allure report for this project, execute the following command:
+```
+$ mvn allure:serve
+```
+The generated report will open in a new browser window.
+
+Sample report can be found here: [AllureSampleReport.pdf](https://github.com/mkornaszewska/restful-booker-tests/blob/main/restAssured/restful-booker/src/test/java/com/kornaszewska/reports/AllureSampleReport.pdf)
 
 ## Issues
 | # | Method and Endpoint | Issue |

@@ -5,10 +5,10 @@ Restful-Booker quick links:
 - [Restful-Booker](https://restful-booker.herokuapp.com/)
 - [Restful-Booker API Docs](https://restful-booker.herokuapp.com/apidoc/index.html)
 
-Restful-Booker is a Web API playground created by Mark Winteringham that forms a Bed and Breakfast booking service. It offers authentication and CRUD operations. This Web API was implemented with some bugs present as well. The bugs I have found are listed in the [Issues section](Issues)
+Restful-Booker is a Web API playground created by Mark Winteringham that forms a Bed and Breakfast booking service. It offers authentication and CRUD operations. This Web API was implemented with some bugs present as well. The bugs I have found are listed in the [Issues section](Issues).
 
 ## Postman
-Postman environment and collection prepared for Restful-Booker API tests. Both can be found in the [postman folder](https://github.com/mkornaszewska/restful-booker-tests/tree/main/postman).
+Postman environment and collection prepared for Restful-Booker API tests. Both can be found in the [Postman folder](https://github.com/mkornaszewska/restful-booker-tests/tree/main/postman).
 
 ## Rest Assured
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Framework-Junit%205-informational?style=flat&&color=1E96FC) ![](https://img.shields.io/badge/Build%20tool-Maven-informational?style=flat&&color=1E96FC)
